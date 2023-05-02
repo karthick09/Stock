@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Stocks</string>
+    <string name="login">Login</string>
+    <string name="name">enter the username</string>
+    <string name="password">enter the password</string>
+    <string name="button_1">Owner</string>
+    <string name="button_2">Manger</string>
+    <string name="button_3">Salesman</string>
+    <string name="submit">Login</string>
+    <string name="helper_text">Required</string>
+</resources>

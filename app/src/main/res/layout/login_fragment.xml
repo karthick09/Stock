@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="107dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="120dp"
+        android:text="@string/login"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"/>
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginText"
+        android:layout_marginTop="20dp">
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_1"
+            android:textColor="@color/black"
+            />
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_2"
+            android:textColor="@color/black"
+            />
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_3"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton"
+        android:layout_centerHorizontal="true"
+        app:helperTextEnabled="true"
+        app:helperText="@string/helper_text"
+        app:helperTextTextColor="@color/colorRed"
+        android:paddingHorizontal="80dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="208dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:inputType="textPersonName"
+            android:hint="@string/name"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textField1"
+        android:layout_centerHorizontal="true"
+        app:endIconMode="password_toggle"
+        android:paddingHorizontal="80dp"
+        app:helperTextEnabled="true"
+        app:helperText="@string/helper_text"
+        app:helperTextTextColor="@color/colorRed"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        app:counterTextColor="@color/colorRed"
+        app:counterOverflowTextAppearance="@color/colorRed"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="208dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:inputType="textPassword"
+            android:hint="@string/password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textField2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/submit"
+        android:onClick="onclick"
+        android:textSize="16sp"
+        android:backgroundTint="@color/activity_color"
+        android:textColor="@color/black"
+        android:textStyle="normal|bold" />
+
+
+
+</RelativeLayout>
